@@ -6,7 +6,16 @@
     padding: 0;
 }
 
-article, body, header, main, section, .info, .info-row, .profile {
+/* FLEXBOX */
+
+article,
+body,
+header,
+main,
+section,
+.info,
+.info-row,
+.profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +32,8 @@ body {
     background-color: darkred;
 }
 
-h2, p {
+h2,
+p {
     color: darkred;
     font-family: "Spirax", sans-serif;
 }
@@ -48,13 +58,15 @@ section {
 
 /* ARTICLES */
 
-#juicy, #cosy {
+#juicy,
+#cosy {
     margin-top: 1rem;
 }
 
-/* PROFILES */
+/* ARTICLE PROFILES */
 
-.info, .profile > p {
+.info,
+.profile>p {
     margin-top: 1.2rem;
 }
 
@@ -81,7 +93,7 @@ section {
     align-self: flex-end;
 }
 
-/* INFO */
+/* ARTICLE INFO */
 
 .info {
     background-color: rgba(0, 0, 0, .8);
@@ -108,7 +120,7 @@ header {
     background-color: rgba(50, 0, 0, .6);
 }
 
-header > nav > a {
+header>nav>a {
     font-family: "Spirax", sans-serif;
     font-size: 2em;
     text-decoration: none;
