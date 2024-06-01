@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Spirax&display=swap" rel="stylesheet" />
@@ -14,105 +14,123 @@
 <body>
     <header>
         <nav>
-            <a href="#">Hot</a>
-            <a href="#">Juicy</a>
-            <a href="#">Cosy</a>
+            <a href="#hot">Hot</a>
+            <a href="#juicy">Juicy</a>
+            <a href="#cosy">Cosy</a>
         </nav>
     </header>
+
     <main>
-        <!-- Hidden main heading -->
-        <h1>Caffe Retro</h1>
+        <article class="hot" id="hot">
 
-        <!-- Hot article -->
-        <article class="hot">
-            <section class="heading">
+            <figure>
+                <img src="./assets/hot.jpg" alt="Cafe bar">
+            </figure>
+
+            <section>
                 <h2>Hot</h2>
+                <div class="profile">
+                    <p class="profile-1">
+                        Hot freshly ground black coffee or a cup of exquisite tea?
+                    </p>
+                    <p class="profile-2">
+                        We give you that perfect cup every time.
+                    </p>
+                </div>
+
+                <div class="info">
+                    <div class="info-row">
+                        <p>Mocha Latte</p>
+                        <p>€ 7.50</p>
+                    </div>
+                    <div class="info-row">
+                        <p>Caffe Formaggio</p>
+                        <p>€ 5.00</p>
+                    </div>
+                    <div class="info-row">
+                        <p>Espresso</p>
+                        <p>€ 3.50</p>
+                    </div>
+                    <div class="info-row">
+                        <p>Chai Verde Latte</p>
+                        <p>€ 5.50</p>
+                    </div>
+                </div>
             </section>
-            <section class="profile">
-                <p>
-                    Hot freshly ground black coffee or a cup of exquisite tea?
-                </p>
-                <p>
-                    We give you that perfect cup every time.
-                </p>
-            </section>
-            <section class="details">
-                <section class="detail">
-                    <p>Mocha Latte</p>
-                    <p>€ 7.50</p>
-                </section>
-                <section class="detail">
-                    <p>Caffe Formaggio</p>
-                    <p>€ 5.00</p>
-                </section>
-                <section class="detail">
-                    <p>Espresso</p>
-                    <p>€ 3.50</p>
-                </section>
-                <section class="detail">
-                    <p>Chai Verde Latte</p>
-                    <p>€ 5.50</p>
-                </section>
-            </section>
+
         </article>
 
-        <!-- Juicy Article -->
-        <article class="juicy">
-            <section class="heading">
+        <article class="juicy" id="juicy">
+
+            <figure>
+                <img src="./assets/juicy.jpg" alt="Cafe bar">
+            </figure>
+
+            <section>
                 <h2>Juicy</h2>
+                <div class="profile">
+                    <p class="profile-1">
+                        Ripe fruit - freshly squeezed.
+                    </p>
+                    <p class="profile-2">
+                        It's as simple as that. Chunky or smooth - it's your choice.
+                    </p>
+                </div>
+
+                <div class="info">
+                    <div class="info-row">
+                        <p>Branched Apricots</p>
+                        <p>€ 4.20</p>
+                    </div>
+                    <div class="info-row">
+                        <p>Deep Rasberries</p>
+                        <p>€ 3.50</p>
+                    </div>
+                    <div class="info-row">
+                        <p>Smooth Oranges</p>
+                        <p>€ 6.50</p>
+                    </div>
+                </div>
             </section>
-            <section class="profile">
-                <p>
-                    Ripe fruit - freshly squeezed.
-                </p>
-                <p>
-                    It's as simple as that. Chunky or smooth - it's your choice.
-                </p>
-            </section>
-            <section class="details">
-                <section class="detail">
-                    <p>Branched Apricots</p>
-                    <p>€ 4.20</p>
-                </section>
-                <section class="detail">
-                    <p>Deep Rasberries</p>
-                    <p>€ 3.50</p>
-                </section>
-                <section class="detail">
-                    <p>Smooth Oranges</p>
-                    <p>€ 6.50</p>
-                </section>
-            </section>
+
         </article>
 
-        <!-- Cosy article -->
-        <article class="cosy">
-            <section class="heading">
+        <article class="cosy" id="cosy">
+
+            <figure>
+                <img src="./assets/cosy.jpg" alt="Cafe bar">
+            </figure>
+
+            <section>
                 <h2>Cosy</h2>
+                <div class="profile">
+                    <p class="profile-1">
+                        Hang around. Enjoy the settings.
+                    </p>
+                    <p class="profile-2">
+                        Use our fast WiFi. Borrow a newspaper or a novel.
+                    </p>
+                </div>
+
+                <div class="info">
+                    <div class="info-row">
+                        <p>Mon-Sun</p>
+                        <p>8am – 11pm</p>
+                    </div>
+                    <div class="info-row">
+                        <p>Caffe Retro</p>
+                        <p>Canto VI</p>
+                    </div>
+                    <div class="info-row">
+                        <p>0123-45 67 89</p>
+                        <p>caffe@lorem.pge</p>
+                    </div>
+                </div>
             </section>
-            <section class="profile">
-                <p>
-                    Hang around. Enjoy the settings.
-                </p>
-                <p>
-                    Use our fast WiFi. Borrow a newspaper or a novel.
-                </p>
-            </section>
-            <section class="details">
-                <section class="detail">
-                    <p>Mon-Sun</p>
-                    <p>8am – 11pm</p>
-                </section>
-                <section class="detail">
-                    <p>Caffe Retro</p>
-                    <p>Canto VI</p>
-                </section>
-                <section class="detail">
-                    <p>0123-45 67 89</p>
-                    <p>caffe@lorem.pge</p>
-                </section>
-            </section>
+
         </article>
+
+
     </main>
 </body>
 

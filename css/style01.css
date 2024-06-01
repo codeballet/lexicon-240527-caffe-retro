@@ -1,0 +1,46 @@
+:root,
+article,
+body,
+figure,
+section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article, body, figure, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 962px;
+}
+
+img {
+    height: vw;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 962px;
+    height: 3rem;
+    background-color: rgba(50, 0, 0, .6);
+}
+
+.hot,
+.juicy,
+.cosy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

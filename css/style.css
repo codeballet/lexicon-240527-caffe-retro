@@ -1,0 +1,117 @@
+/* GLOBALS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article, body, header, main, section, .info, .info-row, .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ELEMENTS */
+
+article {
+    position: relative;
+}
+
+body {
+    background-color: darkred;
+}
+
+h2, p {
+    color: darkred;
+    font-family: "Spirax", sans-serif;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+img {
+    max-width: 962px;
+    z-index: -1;
+}
+
+p {
+    font-family: "Poiret One", sans-serif;
+    color: white;
+}
+
+section {
+    position: absolute;
+}
+
+/* ARTICLES */
+
+#juicy, #cosy {
+    margin-top: 1rem;
+}
+
+/* PROFILES */
+
+.info, .profile > p {
+    margin-top: 1.2rem;
+}
+
+.profile {
+    width: 35rem;
+}
+
+.profile p {
+    width: 27rem;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgba(139, 0, 0, .8);
+    color: white;
+    padding: .5rem;
+    /* margin-top: 1rem; */
+}
+
+
+.profile .profile-1 {
+    align-self: flex-start;
+}
+
+.profile .profile-2 {
+    align-self: flex-end;
+}
+
+/* INFO */
+
+.info {
+    background-color: rgba(0, 0, 0, .8);
+    width: 27rem;
+    padding: 1rem 2rem;
+}
+
+.info-row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 962px;
+    height: 4rem;
+    background-color: rgba(50, 0, 0, .6);
+}
+
+header > nav > a {
+    font-family: "Spirax", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    margin: 0 2rem;
+}
