@@ -1,4 +1,4 @@
-/* GENERAL */
+/* GLOBAL */
 
 * {
     box-sizing: border-box;
@@ -6,15 +6,13 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: darkred;
 }
-
-main {
-    width: 100vw;
-    overflow: hidden;
-}
-
 
 /* FLEXBOX */
 
@@ -48,7 +46,7 @@ header>nav {
 header {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 
     width: 100%;
     height: 4rem;
@@ -63,18 +61,39 @@ header>nav>a {
     margin: 0 2rem;
 }
 
-/* ARTICLES */
+/* BACKGROUND IMAGES */
 
-article {
+section#hot,
+section#juicy,
+section#cosy {
     position: relative;
-    z-index: 0;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
-figure,
-img {
-    height: 100%;
+section#hot {
+    background-image: url('../assets/hot.jpg');
 }
+
+section#juicy {
+    background-image: url('../assets/juicy.jpg');
+}
+
+section#cosy {
+    background-image: url('../assets/cosy.jpg');
+}
+
+#juicy,
+#cosy {
+    margin-top: 1rem;
+}
+
+/* ELEMENTS */
 
 h2,
 p {
@@ -91,17 +110,11 @@ p {
     color: white;
 }
 
-section {
+article {
     position: absolute;
-    z-index: 1;
 }
 
-#juicy,
-#cosy {
-    margin-top: 1rem;
-}
-
-/* ARTICLE PROFILES */
+/* SECTION PROFILES */
 
 .profile {
     width: 35rem;
@@ -133,7 +146,7 @@ section {
     align-self: flex-end;
 }
 
-/* ARTICLE INFO */
+/* SECTION INFO */
 
 .info {
     background-color: rgba(0, 0, 0, .8);
